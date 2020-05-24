@@ -16,7 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-workshop/material": ["libs/material/src/index.ts"]
+      "@angular-workshop/material": ["libs/material/src/index.ts"],
+      "@workshop/ui-login": ["libs/ui-login/src/index.ts"],
+      "@workshop/core-data": ["libs/core-data/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

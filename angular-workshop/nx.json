@@ -28,6 +28,12 @@
     "dashboard-e2e": {
       "tags": [],
       "implicitDependencies": ["dashboard"]
+    },
+    "ui-login": {
+      "tags": []
+    },
+    "core-data": {
+      "tags": []
     }
   }
 }
