@@ -9,6 +9,7 @@ import { ProjectsComponent } from './projects/projects.component'
 import { HomeModule } from './home/home.module';
 import { ProjectsModule } from './projects/projects.module';
 import { CustomersModule } from './customers/customers.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import { CustomersModule } from './customers/customers.module';
     MaterialModule,
     HomeModule,
     ProjectsModule,
-    CustomersModule
+    CustomersModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
