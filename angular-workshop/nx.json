@@ -34,6 +34,9 @@
     },
     "core-data": {
       "tags": []
+    },
+    "ui-toolbar": {
+      "tags": []
     }
   }
 }
