@@ -1,5 +1,5 @@
 {
-  "npmScope": "angular-workshop",
+  "npmScope": "workshop",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": {
@@ -19,12 +19,15 @@
     }
   },
   "projects": {
-    "angular-workshop": {
+    "material": {
       "tags": []
     },
-    "angular-workshop-e2e": {
+    "dashboard": {
+      "tags": []
+    },
+    "dashboard-e2e": {
       "tags": [],
-      "implicitDependencies": ["angular-workshop"]
+      "implicitDependencies": ["dashboard"]
     }
   }
 }

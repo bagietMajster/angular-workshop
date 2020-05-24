@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'angular-workshop',
+  name: 'material',
   preset: '../../jest.config.js',
-  coverageDirectory: '../../coverage/apps/angular-workshop',
+  coverageDirectory: '../../coverage/libs/material',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',
