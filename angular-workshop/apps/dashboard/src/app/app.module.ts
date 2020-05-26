@@ -10,17 +10,19 @@ import { HomeModule } from './home/home.module';
 import { ProjectsModule } from './projects/projects.module';
 import { CustomersModule } from './customers/customers.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { UiLoginModule } from '@workshop/ui-login'
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
+    AppRoutingModule,
     MaterialModule,
     HomeModule,
     ProjectsModule,
     CustomersModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
