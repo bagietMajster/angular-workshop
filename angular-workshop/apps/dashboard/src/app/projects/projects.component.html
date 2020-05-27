@@ -37,7 +37,7 @@
         </mat-card-header>
         <form>
           <mat-card-content>
-            {{selectedProject | json}}
+            <span *ngIf="selectedProject">{{selectedProject | json}}</span>
           </mat-card-content>
           <mat-card-actions>
             <button type="submit" mat-button color="primary">Save</button>
