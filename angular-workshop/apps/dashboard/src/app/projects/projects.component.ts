@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectsService } from '../../../../../libs/core-data/src/lib/projects/projects.service';
+import { Project } from 'libs/core-data/src/lib/projects/project';
 
 @Component({
   selector: 'app-projects',
@@ -7,36 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private projectService: ProjectsService) { }
 
-  projects = [
-    {
-      id: '1',
-      title: 'Project One',
-      details: 'This is a sample project',
-      percentComplete: 20,
-      approved: false,
-    },
-    {
-      id: '2',
-      title: 'Project Two',
-      details: 'This is a sample project',
-      percentComplete: 40,
-      approved: false,
-    },
-    {
-      id: '3',
-      title: 'Project Three',
-      details: 'This is a sample project',
-      percentComplete: 100,
-      approved: true,
-    }
-  ];
+  projects: Project[];
 
-  selectedProject = this.projects[0];
+  selectedProject: Project;
 
   selectProject(project) {
     this.selectedProject = project;
+  }
+
+  getProjects() {
+    this.projectService.getAll().subscribe((result: any) => this.projects=result);
   }
 
   cancel() {
@@ -44,6 +28,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getProjects();
   }
 
 }
