@@ -93,26 +93,29 @@
   ],
   "projects": [
     {
-      "id": "1",
-      "title": "Project HOLLA!",
-      "details": "This is a sample project",
-      "percentComplete": 20,
-      "approved": false,
-      "startDate": null,
-      "targetDate": null,
-      "completionDate": null,
-      "customerId": "1"
-    },
-    {
       "id": "2",
-      "title": "Project Two",
-      "details": "This is a sample project",
-      "percentComplete": 40,
+      "title": "Project Twoffd",
+      "details": "This is a sample projectasdasda",
+      "percentComplete": 77,
       "approved": false,
       "startDate": null,
       "targetDate": null,
       "completionDate": null,
       "customerId": "3"
+    },
+    {
+      "id": "dsoDgSB",
+      "title": "asdasdas",
+      "details": "asdsadasd",
+      "percentComplete": 21,
+      "approved": false
+    },
+    {
+      "id": "uEt3uii",
+      "title": "fsdfdsf",
+      "details": "ssdsdsd",
+      "percentComplete": 85,
+      "approved": true
     }
   ]
 }
