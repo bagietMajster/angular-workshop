@@ -23,6 +23,10 @@ export class ProjectsComponent implements OnInit {
     this.projectService.getAll().subscribe((result: any) => this.projects=result);
   }
 
+  deleteProject(project) {
+    this.projectService.deleteProject(project.id).subscribe(result => this.getProjects());
+  }
+
   cancel() {
     this.selectProject(null);
   }
