@@ -11,7 +11,7 @@ export class ProjectsComponent implements OnInit {
 
   constructor(private projectService: ProjectsService) { }
 
-  projects: Project[];
+  projects$;
 
   selectedProject: Project;
 
@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   getProjects() {
-    this.projectService.getAll().subscribe((result: any) => this.projects=result);
+    this.projects$ = this.projectService.getAll();
   }
 
   deleteProject(project) {
